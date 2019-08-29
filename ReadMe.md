@@ -1,3 +1,3 @@
 # Simple HTML based blog
 
-deployed through nginx
+deployed through nginx and Letsencrypt
