@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <title>Home</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+</head>
+
+
+<body>
+  <div class="content">
+    <div class="section">
+      <div class="columns container is-centered">
+        <div class="column is-11 is-offset-1">
+          <h1 class="title has-text-centered">Welcome To My Blog</h1>
+          <div class="section">
+            <section>
+              <div class="container is-fluid">
+                <div id="app">
+                  <table class="table  is-striped is-narrow is-hoverable">
+                    <thead>
+                      <tr>
+                        <th>S.No</th>
+                        <th>Article Name</th>
+                        <th>Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr v-for="article in Articles">
+                        <td>
+                          {{ article.id }}
+                        </td>
+                        <td>
+                          <a :href=article.link>{{ article.name }}</a>
+                        </td>
+                        <td>
+                          {{ article.date }}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer ">
+    <div class="content has-text-centered">
+      <p>
+        <strong>msandeep.io</strong> by <a href="https://github.com/smukk9">Sandeep M</a>
+      </p>
+    </div>
+  </footer>
+</body>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      Articles: [
+        {
+          "id": 1,
+          "name": "test1",
+          "link": "content/1.html",
+          "date": "04/23/2019"
+        },
+        {
+          "id": 2,
+          "name": "test1",
+          "link": "testcontent/2.html",
+          "date": "04/23/2019"
+        },
+        {
+          "id": 3,
+          "name": "Welcome to the first blog post hope hou enjoy",
+          "link": "content/3.html",
+          "date": "04/23/2019"
+        },
+        {
+          "id": 4,
+          "name": "test1",
+          "link": "content/4.html",
+          "date": "04/23/2019"
+        }
+      ]
+
+    }
+  })
+</script>
+<style>
+  .table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  content {
+    min-height: calc(100vh - 70px);
+    padding: 40px 40px 0 40px;
+  }
+
+  .footer {
+    height: 50px;
+  }
+</style>
+
+</html>
