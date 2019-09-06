@@ -4,10 +4,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <title>Read</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
 </head>
 
 <body>
@@ -18,10 +14,9 @@
       </a>
     </nav>
     <div class="section container">
-
-      <h1 class="title has-text-centered">Article</h1>
+      <h1 class="title has-text-centered">Test Article heading</h1>
+      <h1 class="subtitle has-text-centered">04/23/2019</h1>
       <div class="section">
-
         <section>
           <div class="container is-fluid">
             <p>
@@ -49,46 +44,7 @@
 
             </p>
             <br>
-            <pre><code class="java">import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
-public class Solution {
-
-    public static int[] arrayLeftRotation(int[] a, int n, int k) {
-  
-        int rotation = k;
-        int arrLength = n;
-        int temp = 0;
-         int b[] = new int[n];
-        int new_index=0;
-        for(int i = 0; i < arrLength; i++){
-             new_index =(i+rotation)%arrLength;
-            b[i] = a[new_index];
-        }
-         return b;
-           
-            }      
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int k = in.nextInt();
-        int a[] = new int[n];
-        for(int a_i=0; a_i < n; a_i++){
-            a[a_i] = in.nextInt(); 
-        } 
-      
-        int[] output = new int[n];
-        output = arrayLeftRotation(a, n, k);
-        for(int i = 0; i < n; i++)
-            System.out.print(output[i] + " ");
-           System.out.println();
-      
-    }
-}
-            </code></pre>
+            <script src="https://gist.github.com/smukk9/2672c0caffc62aa1d7935268cb117fe4.js"></script>
           </div>
         </section>
       </div>

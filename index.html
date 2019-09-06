@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <title>Home</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 
@@ -13,11 +14,20 @@
       <div class="columns container is-centered">
         <div class="column is-11 is-offset-1">
           <h1 class="title has-text-centered">Welcome To My Blog</h1>
+
           <div class="section">
+              <div class="container is-fluid">
+            <p>Thanks for visting here, this is a basic strip down version of the blog that i used have here. I am still working on making changes.
+              The problem with the previous blog was that there was lot of friction in writing article and posting them. I will create an another rant article on stupid mistakes i have made and how it shoud have been desinged in the first place. In shot this blog will allow me to publish article faster and easier and looks very simple. </p>
+              </div>
+            </div>
+          <div class="section">
+         
             <section>
               <div class="container is-fluid">
                 <div id="app">
                   <table class="table  is-striped is-narrow is-hoverable">
+                      <h1 class="title has-text-centered">Archive</h1>
                     <thead>
                       <tr>
                         <th>S.No</th>
@@ -74,7 +84,7 @@
         },
         {
           "id": 3,
-          "name": "Welcome to the first blog post hope hou enjoy",
+          "name": "test2",
           "link": "content/3.html",
           "date": "04/23/2019"
         },
@@ -98,6 +108,7 @@
   content {
     min-height: calc(100vh - 70px);
     padding: 40px 40px 0 40px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .footer {
