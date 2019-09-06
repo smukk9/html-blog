@@ -10,6 +10,7 @@
 
 <body>
   <div class="content">
+      <div id="app">
     <div class="section">
       <div class="columns container is-centered">
         <div class="column is-11 is-offset-1">
@@ -18,16 +19,16 @@
           <div class="section">
               <div class="container is-fluid">
             <p>Thanks for visting here, this is a basic strip down version of the blog that i used have here. I am still working on making changes.
-              The problem with the previous blog was that there was lot of friction in writing article and posting them. I will create an another rant article on stupid mistakes i have made and how it shoud have been desinged in the first place. In shot this blog will allow me to publish article faster and easier and looks very simple. </p>
+              The problem with the previous blog was that there was lot of friction in writing article and posting them. I will create an another rant article on mistakes i have made and how it shoud have been desinged in the first place. In shot this blog will allow me to publish article faster and easier and looks very simple. </p>
               </div>
             </div>
           <div class="section">
          
             <section>
               <div class="container is-fluid">
-                <div id="app">
-                  <table class="table  is-striped is-narrow is-hoverable">
-                      <h1 class="title has-text-centered">Archive</h1>
+               
+                  <table class="table  is-striped is-bordered   is-narrow is-hoverable">
+                      <h1 class="title has-text-centered">Published Articles</h1>
                     <thead>
                       <tr>
                         <th>S.No</th>
@@ -52,6 +53,28 @@
                 </div>
               </div>
             </section>
+            <div class="section">
+            <section>
+                <div class="container is-fluid">
+                    <table class="table  is-striped  is-bordered is-narrow is-hoverable">
+                        <h1 class="title has-text-centered">Ideas In Progress</h1>
+                      <thead>
+                       
+                      </thead>
+                      <tbody>
+                          <tr v-for="idea in ideas">
+                              <td class="has-text-centered">
+                                {{ idea.name }}
+                              </td>
+                             
+                            </tr>
+                    
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section> 
+              </div> 
           </div>
         </div>
       </div>
@@ -92,6 +115,32 @@
           "id": 4,
           "name": "test1",
           "link": "content/4.html",
+          "date": "04/23/2019"
+        }
+      ],
+      ideas: [
+        {
+          "id": 1,
+          "name": "Things i was missing in previous verision blog",
+          "link": "content/1.html",
+          "date": "04/23/2019"
+        },
+        {
+          "id": 2,
+          "name": "set up nginx as docker",
+          "link": "testcontent/2.html",
+          "date": "04/23/2019"
+        },
+        {
+          "id": 3,
+          "name": "LetsEncrypt..!",
+          "link": "testcontent/2.html",
+          "date": "04/23/2019"
+        },
+        {
+          "id": 3,
+          "name": "LetsEncrypt with Nginx",
+          "link": "testcontent/2.html",
           "date": "04/23/2019"
         }
       ]
